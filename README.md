@@ -31,3 +31,7 @@ Lastly, in many distro `tkinter` is not even installed.
 ## Improvements?
 
 Yes, feel free to open PR, or an issue.
+
+## License
+
+This project is licensed under the Mozilla Public License, version 2.0. See the LICENSE file for details.
