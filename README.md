@@ -1,56 +1,33 @@
-# YouTube Playlist Downloader
+# YT-Downloader
 
-A simple GUI application to download YouTube playlists using Python and Tkinter.
+Forked from [`abhirai7/YouTube-Playlist-Downloader`](https://github.com/abhirai7/YouTube-Playlist-Downloader).
 
-## Features
-------------
+This is a simple python script to download YouTube playlists and videos. It uses the `pytube` library to download videos.
 
-* Download entire YouTube playlists with a single click
-* Select the download directory
-* Supports highest resolution video downloads
-* User-friendly interface
+## Installation
 
-## Requirements
--------------
+1. Clone the repository
+2. Install the required libraries using `pip install -r requirements.txt`
+3. Run the script using `python main.py`
 
-* Python 3.x
-* Tkinter library (built-in with Python)
-* pytube library (install with `pip install pytube`)
+## Why this fork?
 
-## Usage
------
+I wanted to add a feature to the original script and make it look better, so I forked it. I will be adding more features to this script in the future.
+Also, the original author just want to get things done and didn't care about the code quality, so I will be refactoring the code to make it more readable and maintainable.
+And bit more flexible as you can download videos from a playlist or a single video.
 
-1. Clone the repository or download the ZIP file
-2. Install the required libraries by running `pip install pytube`
-3. Run the `youtube_downloader.py` file using Python (e.g., `python youtube_downloader.py`)
-4. Enter the YouTube playlist URL and select the download directory
-5. Click the "Download" button to start the download process
+## Why I removed the GUI?
 
+CLI works better for me, and I don't want to maintain two different interfaces. So I decided to remove the GUI.
+Secondly, python GUI libraries are not that good, and I don't want to use `tkinter` or `PyQt` for this simple script.
+Thirdly, cloud services like `Heroku` don't support GUI applications.
+Lastly, in many distro `tkinter` is not even installed.
 
-## Known Issues
--------------
+## Screenshots
 
-* Does not support private playlists
-* Does not support playlists with more than 100 videos
-* May not work with very large playlists due to YouTube's API limitations
+![Multiple Video Download](assests/img2.png)
+![Single Video Download](assests/img1.png)
 
-## Contributing
-------------
+## Improvements?
 
-Contributions are welcome! If you'd like to add new features or fix bugs, please fork the repository and submit a pull request.
-
-## License
--------
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Author
-------
-
-Abhishek Rai
-
-## Acknowledgments
----------------
-
-* pytube library for making YouTube video downloads easy
-* Tkinter library for providing a simple GUI framework
+Yes, feel free to open PR, or an issue.
